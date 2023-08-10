@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Source Sans pro;
+    src: url(assets/fonts/SourceSansPro-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Source Sans pro;
+    min-height: 100vh;
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 100vh;
+}
+.header-left{
+    display: grid;
+    align-content: center;
+    margin: 0 auto;
+    width: 70%;
+}
+.header-left-container h1,p,button{
+    margin: 20px auto;
+}
+.header-left-container h1{
+    font-size: 4rem;
+    font-weight: normal;
+}
+.header-left-container p{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #222222;
+}
+.header-left-container button{
+    font-family: Source Sans pro;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.3 ease;
+    letter-spacing: 2px;
+}
+.header-left-container button:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}
+.header-img{
+    background: url(assets/img/banner.jpg) right/cover;
+}
+.ligne{
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+}
+.magna{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 50vh;
+}
+.img_left{
+    background: url(assets/img/img-left.jpg) center/cover;
+}
+.magna-right{
+    display: grid;
+    width: 90%;
+    align-content: center;
+    margin: 0 auto;
+}
+.magna-right-container h2,p,button{
+    margin: 30px auto;
+}
+.magna-right-container h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.magna-right-container p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #222222;
+}
+.magna-right-container button{
+    font-family: Source Sans pro;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.3 ease;
+    letter-spacing: 2px;
+}
+.magna-right-container button:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}
+.tempus{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    min-height: 50vh;
+}
+.tempus-left{
+    display: grid;
+    width: 90%;
+    align-content: center;
+    margin: 0 auto;
+}
+.tempus-left-container h2,p,button{
+    margin: 30px auto;
+}
+.tempus-left-container h2{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.tempus-left-container p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #222222;
+}
+.tempus-left-container button{
+    font-family: Source Sans pro;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.3 ease;
+    letter-spacing: 2px;
+}
+.tempus-left-container button:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}
+.img_right{
+    background: url(assets/img/img-right.jpg) center/cover;
+}
+.contact h2{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 40px;
+    font-size: 2rem;
+}
+.questionnaire{
+    width: 50%;
+    margin: 0 auto;
+}
+form{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+    "name email"
+    "message message"
+    "envoyer envoyer";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 0;
+}
+.contact form textarea{
+    resize: none;
+    display: block;
+    width: 600px;
+    height: 150px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+}
+input, label, textarea {
+    display:block;
+    margin: 20px auto;
+}
+.name label,.email label,.message label{
+    text-align: center;
+    font-family: Source Sans pro;
+    font-weight: bold;
+}
+.name input,.email input{
+    height: 30px;
+    width: 280px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+}
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+}
+.message{
+    grid-area: message;
+}
+.envoyer{
+    grid-area: envoyer;
+}
+.envoyer input{
+    font-family: Source Sans pro;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.3 ease;
+    letter-spacing: 2px;
+}
+.envoyer input:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}
+.ligne_last{
+    background-color: #ccc;
+    height: 1px;
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 50%;
+    margin: 100px auto;
+}
+.socials i{
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 100px;
+}
+.socials i:hover{
+    border: 2px solid skyblue;
+    color: skyblue;
+}
+@media screen and (max-width: 800px){
+    .magna,.tempus{
+        display: block;
+    }
+    .img_left,.img_right{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px){
+    form{
+        grid-template-columns: 200px 200px;
+    }
+    .contact form textarea{
+        width: 400px;
+    }
+    .name input,.email input{
+        width: 150px;
+    }
+    .socials i{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 430px){
+    form{
+        grid-template-columns: 150px 150px;
+    }
+    .contact form textarea{
+        width: 300px;
+    }
+    .name input,.email input{
+        width: 100px;
+    }
+    .socials i{
+        font-size: 0.4rem;
+    }
+}
